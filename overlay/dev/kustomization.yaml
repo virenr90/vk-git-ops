@@ -6,7 +6,7 @@ resources:
 patches:
 - target:
     kind: Namespace
-    # name: build-robot
+    name: dev-ns
   patch: |-
     - op: replace
       path: /metadata/name
@@ -14,26 +14,3 @@ patches:
     - op: replace
       path: /metadata/labels/owner
       value: GCP-Team-Dev
-
-# - target:
-#     kind: ServiceAccount
-#     # name: k8s-external-dns
-#   patch: |-
-#     - op: add
-#       path: /metadata/name
-#       value: k8s-external-dns
-#     - op: add
-#       path: /metadata/namespace
-#       value: cert-manager
-#     - op: add
-#       path: /metadata/labels/owner
-#       value: GCP-Team-Dev
-#     - op: replace
-#       path: /metadata/annotations/gcp-sa/a
-#       value: workload-identity
-
-
-
-
-
-
