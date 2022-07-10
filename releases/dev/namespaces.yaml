@@ -11,7 +11,7 @@ spec:
     repository: https://virenr90.github.io/helmchart/
     path: charts/namespace-helm-template
     name: namespace-helm-template
-    ref: main
+    ref: dev
     #version: v0.1.0
     
 
