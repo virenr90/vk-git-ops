@@ -1,18 +1,18 @@
-# apiVersion: helm.fluxcd.io/v1
-# kind: HelmRelease
-# metadata:
-#   name: vk07
-#   namespace: default
-#   annotations:
-#     fluxcd.io/automated: "true"
-# spec:
-#   releaseName: ns-rels
-#   chart:
-#     repository: https://virenr90.github.io/helmchart/
-#     #path: charts/namespace-helm-template
-#     name: namespace-helm-template
-#     #ref: dev
-#     version: v0.1.0
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: vk07
+  namespace: default
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: ns-rels
+  chart:
+    repository: https://virenr90.github.io/helmchart/
+    #path: charts/namespace-helm-template
+    name: namespace-helm-template
+    #ref: dev
+    version: v0.1.0
     
 
 
