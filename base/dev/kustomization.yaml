@@ -1,0 +1,6 @@
+# ./base/kustomization.yaml
+resources:
+- namespace.yaml
+# - serviceaccount.yaml
+# - role.yaml
+# - rolebinding.yaml

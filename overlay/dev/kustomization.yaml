@@ -1,0 +1,39 @@
+# ./dev/kustomization.yaml
+
+resources:
+- ../../base/dev
+
+patches:
+- target:
+    kind: Namespace
+    # name: build-robot
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: git-ops
+    - op: replace
+      path: /metadata/labels/owner
+      value: GCP-Team-Dev
+
+# - target:
+#     kind: ServiceAccount
+#     # name: k8s-external-dns
+#   patch: |-
+#     - op: add
+#       path: /metadata/name
+#       value: k8s-external-dns
+#     - op: add
+#       path: /metadata/namespace
+#       value: cert-manager
+#     - op: add
+#       path: /metadata/labels/owner
+#       value: GCP-Team-Dev
+#     - op: replace
+#       path: /metadata/annotations/gcp-sa/a
+#       value: workload-identity
+
+
+
+
+
+
